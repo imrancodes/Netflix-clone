@@ -1,0 +1,385 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --netflix-red: #e50914;
+  --main-padding:0 22.125rem;
+}
+
+body {
+  font-family: "Martel Sans", sans-serif;
+  background-color: #000000;
+  color: white;
+}
+
+.main-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("assets/main-bg.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100px;
+}
+
+.logo {
+  margin-top: 20px;
+}
+
+.logo svg {
+  width: 9.25rem;
+  height: 2.5rem;
+  color: var(--netflix-red);
+  fill: currentColor;
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.dropdown-img svg {
+  color: white;
+  fill: currentColor;
+}
+
+.drop-down {
+  display: flex;
+  align-items: center;
+  border: 0.1px solid rgba(255, 255, 255, 0.518);
+  border-radius: 5px;
+  padding: 0px 10px;
+  background-color: #11100f76;
+  padding-top: 2px;
+  width: max-content;
+}
+
+.dropdown-language {
+  padding-left: 5px;
+}
+
+select {
+  background-color: #11100f76;
+  color: white;
+  border: none;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.sign-in-btn {
+  background-color: var(--netflix-red);
+  color: white;
+  border: none;
+  padding: 9px 16px;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.sign-in-btn:hover {
+  background-color: #c11119;
+}
+
+select#language,
+select#country,
+select#movies-tvshow {
+  border: none;
+  outline: none;
+}
+
+option {
+  background-color: white;
+  color: black;
+  padding: 0px 10px;
+}
+
+main {
+  display: flex;
+  height: 80%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 0px 20px;
+}
+
+main h1 {
+  color: white;
+  line-height: 3.5rem;
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+}
+
+main p {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.price-detail {
+  padding: 6px 0px 20px 0px;
+}
+
+.input-desc {
+  margin-bottom: 0.8rem;
+}
+
+.email-submit {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+input {
+  background-color: #11100f76;
+  border: 0.1px solid rgba(255, 255, 255, 0.518);
+  padding: 1rem 15rem 1rem 1rem;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+}
+
+input::placeholder {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #b8b9b9;
+}
+
+.get-started {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  gap: 10px;
+  padding: 15px 30px;
+}
+
+.curved-line {
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(
+    to right,
+    rgba(33, 13, 22, 1) 16%,
+    rgba(184, 40, 105, 1),
+    rgba(229, 9, 20, 1),
+    rgba(184, 40, 105, 1),
+    rgba(33, 13, 22, 1) 84%
+  );
+  border-top-right-radius: 50% 100%;
+  border-top-left-radius: 50% 100%;
+  position: absolute;
+  bottom: -10px;
+  z-index: 1;
+}
+
+.curved-line-2 {
+  width: 100%;
+  height: 85px;
+  border-top-right-radius: 50% 100%;
+  border-top-left-radius: 50% 100%;
+  z-index: 2;
+  position: absolute;
+  bottom: -18px;
+  background: radial-gradient(
+      50% 500% at 50% -420%,
+      rgba(64, 97, 231, 0.4) 80%,
+      rgba(0, 0, 0, 0.1) 100%
+    ),
+    black;
+}
+
+.trending-movies {
+  width: 100%;
+  position: relative;
+  color: white;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: var(--main-padding);
+}
+
+.trending-movies h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.dropD {
+  display: flex;
+  gap: 20px;
+}
+
+.newdropD {
+  padding-top: 0.5rem;
+  padding-right: calc(2.25rem + 0rem);
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  line-height: 1.5;
+}
+
+.movies-list {
+  margin-block: 40px;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 40px;
+  overflow-x: scroll;
+  scrollbar-width: none; 
+  -ms-overflow-style: none;  
+  overscroll-behavior-inline: contain;
+  margin: 0 20rem;
+  margin-block: 30px;
+  position: relative;
+  padding: 10px 0px 10px 36px;
+}
+
+.movies-list::-webkit-scrollbar {
+    display: none;
+  }
+
+
+.movies{
+    width: 13.375rem;
+    height: 18.75rem;
+    position: relative;
+}
+
+.movies:hover{
+  transform: scale(1.04);
+  transition: .5s all ease;
+  cursor: pointer;
+}
+
+.movies img{
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.number{
+    color: black;
+    font-size: 7rem;
+    font-weight: 700;
+    position: absolute;
+    z-index: 5;
+    top: 90px;
+    left: -1.5rem;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgba(255, 255, 255, 0.7);
+    text-shadow: 0 0 2rem black
+}
+
+.third-section{
+  padding: var(--main-padding);
+}
+
+.third-section h2, .fourth-section h2{
+  line-height: 3.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.cards{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 40px;
+}
+
+.card-container{
+  background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+  border-radius: 20px;
+  padding: 30px;
+  position: relative;
+}
+
+.card-container h3{
+  font-size: 1.25rem;
+  line-height: 1.8rem;
+}
+
+.card-container p{
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #b0afb8;
+  padding: 20px 0px 90px 0px;
+}
+
+.card-svg{
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.fourth-section, .fifth-section, .sixth-section{
+  padding: var(--main-padding);
+  padding-bottom: 40px;
+}
+
+details{
+  margin-bottom: 0.5rem;
+}
+
+details p{
+  padding: 10px 20px;
+  background-color: rgb(45, 45, 45);
+  font-size: 1.5rem;
+}
+
+summary{
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 0;
+  margin-top: 0;
+  background-color: rgb(45, 45, 45);
+  padding: 25px 20px;
+  cursor: pointer;
+}
+
+summary:hover{
+  background-color: rgb(65, 65, 65);
+}
+
+
+.fifth-section h4{
+  text-align: center;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+
+.footer-text, .footer-links{
+  color: #b2b2b2;
+}
+
+.nav-links{
+  padding: 40px 0px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.nav-links a{
+  padding-bottom: 5px;
+}
+
+.nav-links a:active{
+  color: var(--netflix-red);
+}
+
+.branding{
+  padding-top: 40px;
+  font-size: 0.875rem;
+  font-weight: 400;
+}

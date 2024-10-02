@@ -1,0 +1,177 @@
+@media (max-width:1900px){
+  .trending-movies, .third-section, .fourth-section, .fifth-section, .sixth-section{
+    padding: 0 10rem;
+  }
+  .movies-list{
+    margin: 0 10rem;
+    padding: 20px 0px 20px 36px;
+  }
+  .third-section{
+    padding: 0 10rem;
+  }
+  .fourth-section, .fifth-section{
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width:1300px){
+  .trending-movies, .third-section, .fourth-section, .fifth-section, .sixth-section{
+    padding: 0 5rem;
+  }
+  .movies-list{
+    margin: 0 5rem;
+    padding: 20px 0px 20px 21px;
+    gap: 0px;
+  }
+  .movies img{
+    width: 10rem;
+    height: 14rem;
+  }
+  .movies{
+    width: 13rem;
+    height: 18rem;
+  }
+  .number{
+    font-size: 5rem;
+  }
+  .cards{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .third-section h2, .fourth-section h2{
+    font-size: 1.5rem;
+  }
+  .fourth-section, .fifth-section{
+    padding-bottom: 40px;
+  }
+  .nav-links{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 1100px) {
+  main h1 {
+    line-height: 3rem;
+    font-size: 3rem;
+  }
+  main p {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  .price-detail {
+    padding: 6px 0px 15px 0px;
+  }
+}
+
+
+@media (max-width:1000px){
+  .movies img{
+    width: 7rem;
+    height: 9.8rem;
+  }
+  .number{
+    font-size: 3rem;
+    left: -0.5rem;
+  }
+  .movies{
+    width: 9rem;
+    height: 11rem;
+  }
+  .trending-movies, .third-section, .fourth-section, .fifth-section, .sixth-section{
+    padding: 0 2rem;
+  }
+  .movies-list{
+    margin: 0 2rem;
+    padding: 20px 0px 20px 10px;
+    gap: 0px;
+  }
+  .cards{
+    grid-template-columns: 1fr;
+  }
+  .fourth-section, .fifth-section{
+    padding-bottom: 40px;
+  }
+  .nav-links{
+    grid-template-columns: 1fr 1fr ;
+  }
+}
+
+@media (max-width: 950px) {
+  header {
+    justify-content: space-between;
+    padding: 0px 30px;
+  }
+  .logo{
+    margin-top: 11px;
+  }
+  .logo svg {
+    width: 5.5625rem;
+    height: 1.5rem;
+  }
+  main h1 {
+    line-height: 2.5rem;
+    font-size: 2.5rem;
+  }
+  .price-detail {
+    padding: 4px 0px 12px 0px;
+  }
+
+}
+
+@media (max-width: 700px) {
+  .break {
+    display: none;
+  }
+  .email-submit {
+    flex-direction: column;
+  }
+  .get-started {
+    justify-content: center;
+    margin: auto;
+  }
+}
+
+@media (max-width:600px){
+  .nav-links{
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media (max-width: 500px) {
+  input {
+    padding: 1rem 1rem 1rem 1rem;
+  }
+  main h1 {
+    line-height: 2rem;
+    font-size: 2rem;
+  }
+  .dropD{
+    flex-direction: column;
+    width: 100%;
+  }
+  .newdropD{
+    width: 100%;
+  }
+  .curved-line{
+    height: 41px;
+  }
+  .curved-line-2{
+    height: 46px;
+  }
+}
+
+@media (max-width: 400px){
+    header{
+        flex-direction: column;
+        justify-content: right;
+        align-items: flex-start;
+    }
+}
+@media (max-width: 300px){
+    .nav-content{
+        flex-direction: column;
+    }
+    header{
+        padding-bottom: 8rem;
+    }
+}
